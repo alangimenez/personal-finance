@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 
-const login = require('./sections/login')
+const login = require('./sections/login.router')
 
 router.use(login)
 

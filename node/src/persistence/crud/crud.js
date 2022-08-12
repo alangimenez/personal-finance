@@ -10,6 +10,7 @@ const uri = process.env.MONGODB_URI;
         await mongoose.connect(uri);
         console.log('database connected')
     } catch (e) {
+        console.log(uri);
         return console.log(`La conexión a la base de datos ha tenido un error -> ` + e.message);
     }
 })();
